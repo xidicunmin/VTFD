@@ -7,3 +7,12 @@ E:\VTFD\VTFD\obj\x86\Debug\VTFD.Properties.Resources.resources
 E:\VTFD\VTFD\obj\x86\Debug\VTFD.csproj.GenerateResource.Cache
 E:\VTFD\VTFD\obj\x86\Debug\VTFD.exe
 E:\VTFD\VTFD\obj\x86\Debug\VTFD.pdb
+C:\github-pj\VTFD\VTFD\bin\Debug\VTFD.exe.config
+C:\github-pj\VTFD\VTFD\obj\x86\Debug\VTFD.exe
+C:\github-pj\VTFD\VTFD\obj\x86\Debug\VTFD.pdb
+C:\github-pj\VTFD\VTFD\bin\Debug\VTFD.exe
+C:\github-pj\VTFD\VTFD\bin\Debug\VTFD.pdb
+C:\github-pj\VTFD\VTFD\obj\x86\Debug\VTFD.csprojResolveAssemblyReference.cache
+C:\github-pj\VTFD\VTFD\obj\x86\Debug\VTFD.frmMain.resources
+C:\github-pj\VTFD\VTFD\obj\x86\Debug\VTFD.Properties.Resources.resources
+C:\github-pj\VTFD\VTFD\obj\x86\Debug\VTFD.csproj.GenerateResource.Cache
