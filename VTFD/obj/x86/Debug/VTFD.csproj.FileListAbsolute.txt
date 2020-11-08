@@ -1,0 +1,9 @@
+E:\VTFD\VTFD\bin\Debug\VTFD.exe.config
+E:\VTFD\VTFD\bin\Debug\VTFD.exe
+E:\VTFD\VTFD\bin\Debug\VTFD.pdb
+E:\VTFD\VTFD\obj\x86\Debug\VTFD.csprojResolveAssemblyReference.cache
+E:\VTFD\VTFD\obj\x86\Debug\VTFD.frmMain.resources
+E:\VTFD\VTFD\obj\x86\Debug\VTFD.Properties.Resources.resources
+E:\VTFD\VTFD\obj\x86\Debug\VTFD.csproj.GenerateResource.Cache
+E:\VTFD\VTFD\obj\x86\Debug\VTFD.exe
+E:\VTFD\VTFD\obj\x86\Debug\VTFD.pdb
