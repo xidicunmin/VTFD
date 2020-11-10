@@ -44,6 +44,14 @@
             this.tsbEditCamera = new System.Windows.Forms.ToolStripButton();
             this.tsbEditVpp = new System.Windows.Forms.ToolStripButton();
             this.grpResultData = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblRunStatus = new System.Windows.Forms.Label();
+            this.lblWidth1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lblWidth2 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.tsbSaveImage = new System.Windows.Forms.ToolStripButton();
+            this.tsbOpenImagePath = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.crdLiveImage)).BeginInit();
             this.grpLiveImage.SuspendLayout();
             this.grpResultImage.SuspendLayout();
@@ -51,6 +59,7 @@
             this.tableLayoutPanel1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
+            this.grpResultData.SuspendLayout();
             this.SuspendLayout();
             // 
             // crdLiveImage
@@ -165,7 +174,9 @@
             this.tsbStart,
             this.tsbStop,
             this.tsbEditCamera,
-            this.tsbEditVpp});
+            this.tsbEditVpp,
+            this.tsbSaveImage,
+            this.tsbOpenImagePath});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(677, 25);
@@ -201,6 +212,7 @@
             this.tsbEditCamera.Name = "tsbEditCamera";
             this.tsbEditCamera.Size = new System.Drawing.Size(60, 22);
             this.tsbEditCamera.Text = "编辑相机";
+            this.tsbEditCamera.Click += new System.EventHandler(this.tsbEditCamera_Click);
             // 
             // tsbEditVpp
             // 
@@ -210,17 +222,104 @@
             this.tsbEditVpp.Name = "tsbEditVpp";
             this.tsbEditVpp.Size = new System.Drawing.Size(58, 22);
             this.tsbEditVpp.Text = "编辑vpp";
+            this.tsbEditVpp.Click += new System.EventHandler(this.tsbEditVpp_Click);
             // 
             // grpResultData
             // 
             this.grpResultData.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpResultData.Controls.Add(this.lblWidth2);
+            this.grpResultData.Controls.Add(this.label6);
+            this.grpResultData.Controls.Add(this.lblWidth1);
+            this.grpResultData.Controls.Add(this.label4);
+            this.grpResultData.Controls.Add(this.lblRunStatus);
+            this.grpResultData.Controls.Add(this.label1);
             this.grpResultData.Location = new System.Drawing.Point(12, 364);
             this.grpResultData.Name = "grpResultData";
             this.grpResultData.Size = new System.Drawing.Size(653, 64);
             this.grpResultData.TabIndex = 6;
             this.grpResultData.TabStop = false;
             this.grpResultData.Text = "结果数据";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Location = new System.Drawing.Point(19, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(48, 16);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "结果:";
+            // 
+            // lblRunStatus
+            // 
+            this.lblRunStatus.AutoSize = true;
+            this.lblRunStatus.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblRunStatus.Location = new System.Drawing.Point(73, 28);
+            this.lblRunStatus.Name = "lblRunStatus";
+            this.lblRunStatus.Size = new System.Drawing.Size(24, 16);
+            this.lblRunStatus.TabIndex = 1;
+            this.lblRunStatus.Text = "OK";
+            // 
+            // lblWidth1
+            // 
+            this.lblWidth1.AutoSize = true;
+            this.lblWidth1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblWidth1.Location = new System.Drawing.Point(207, 28);
+            this.lblWidth1.Name = "lblWidth1";
+            this.lblWidth1.Size = new System.Drawing.Size(16, 16);
+            this.lblWidth1.TabIndex = 3;
+            this.lblWidth1.Text = "0";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label4.Location = new System.Drawing.Point(145, 28);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(56, 16);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "宽度1:";
+            // 
+            // lblWidth2
+            // 
+            this.lblWidth2.AutoSize = true;
+            this.lblWidth2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblWidth2.Location = new System.Drawing.Point(347, 28);
+            this.lblWidth2.Name = "lblWidth2";
+            this.lblWidth2.Size = new System.Drawing.Size(16, 16);
+            this.lblWidth2.TabIndex = 5;
+            this.lblWidth2.Text = "0";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label6.Location = new System.Drawing.Point(285, 28);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(56, 16);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "宽度2:";
+            // 
+            // tsbSaveImage
+            // 
+            this.tsbSaveImage.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.tsbSaveImage.Image = ((System.Drawing.Image)(resources.GetObject("tsbSaveImage.Image")));
+            this.tsbSaveImage.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbSaveImage.Name = "tsbSaveImage";
+            this.tsbSaveImage.Size = new System.Drawing.Size(84, 22);
+            this.tsbSaveImage.Text = "关闭保存图片";
+            this.tsbSaveImage.Click += new System.EventHandler(this.tsbSaveImage_Click);
+            // 
+            // tsbOpenImagePath
+            // 
+            this.tsbOpenImagePath.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.tsbOpenImagePath.Image = ((System.Drawing.Image)(resources.GetObject("tsbOpenImagePath.Image")));
+            this.tsbOpenImagePath.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbOpenImagePath.Name = "tsbOpenImagePath";
+            this.tsbOpenImagePath.Size = new System.Drawing.Size(96, 22);
+            this.tsbOpenImagePath.Text = "打开图片文件夹";
+            this.tsbOpenImagePath.Click += new System.EventHandler(this.tsbOpenImagePath_Click);
             // 
             // frmMain
             // 
@@ -244,6 +343,8 @@
             this.statusStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            this.grpResultData.ResumeLayout(false);
+            this.grpResultData.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -265,6 +366,14 @@
         private System.Windows.Forms.GroupBox grpResultData;
         private System.Windows.Forms.ToolStripButton tsbEditCamera;
         private System.Windows.Forms.ToolStripButton tsbEditVpp;
+        private System.Windows.Forms.Label lblWidth2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblWidth1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblRunStatus;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolStripButton tsbSaveImage;
+        private System.Windows.Forms.ToolStripButton tsbOpenImagePath;
     }
 }
 

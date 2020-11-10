@@ -140,6 +140,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VisionProTool.cs" />
     <Compile Include="VisionResult.cs" />
     <EmbeddedResource Include="frmCameraEdit.resx">
       <DependentUpon>frmCameraEdit.cs</DependentUpon>
